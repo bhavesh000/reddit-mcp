@@ -1,0 +1,21 @@
+# Reddit MCP Server Dependencies
+# Python Reddit API Wrapper
+praw==7.7.1
+
+# FastMCP for Model Context Protocol
+fastmcp==0.1.0
+
+# PRAW dependencies (will be installed automatically)
+# prawcore>=2.3.0
+# update-checker>=0.18
+# requests>=2.28.0
+# websocket-client>=0.54.0
+
+# Optional: For async operations (if needed in future)
+# asyncpraw==7.7.0
+
+# Development dependencies (uncomment if needed)
+# pytest==7.4.3
+# black==23.11.0
+# flake8==6.1.0
+# mypy==1.7.0
