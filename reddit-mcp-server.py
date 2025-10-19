@@ -1513,5 +1513,8 @@ def get_random_post(subreddit_name: Optional[str] = None) -> Dict[str, Any]:
 # ============================================================================
 
 if __name__ == "__main__":
-    # Run the MCP server with stdio transport
-    mcp.run(transport="stdio")
+    # Run the MCP server
+    # The transport will be determined by fastmcp based on how it's invoked
+    # - Local: python reddit-mcp-server.py (uses stdio)
+    # - Cloud: fastmcp run reddit-mcp-server.py --host 0.0.0.0 (uses SSE)
+    mcp.run()

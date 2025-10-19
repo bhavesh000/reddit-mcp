@@ -3,7 +3,7 @@
 praw==7.7.1
 
 # FastMCP for Model Context Protocol
-fastmcp==0.1.0
+fastmcp>=0.5.0
 
 # PRAW dependencies (will be installed automatically)
 # prawcore>=2.3.0
