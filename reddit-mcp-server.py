@@ -1513,10 +1513,5 @@ def get_random_post(subreddit_name: Optional[str] = None) -> Dict[str, Any]:
 # ============================================================================
 
 if __name__ == "__main__":
-    # Detect cloud environment (FASTMCP_CLOUD or PORT are usually set)
-    if os.getenv("FASTMCP_CLOUD") or os.getenv("PORT"):
-        port = int(os.getenv("PORT", "8000"))
-        mcp.run(transport="http", port=port)
-    else:
-        # Local development mode
-        mcp.run(transport="stdio")
+    # Run the MCP server with stdio transport
+    mcp.run(transport="stdio")
